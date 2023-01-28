@@ -1,0 +1,38 @@
+\problemname{Based Porridge}
+
+Computer science students, like kindergarteners, care a lot about fair outcomes: irregardless of
+whether this is achieved through helping the low or keeping down the high. You are hosting a
+\href{https://en.wikipedia.org/wiki/Sittning}{sittning} in Basen for $N$ students. There are
+K kinds of porridge and you have prepared $a_i$ meals of the $i$th kind.
+Of course, everyone loves porridge. But some
+students prefer some kinds to others, in fact, student $i$ will derive $h_{ij}$ happiness from
+eating the $j$th kind of porridge. To maximize fairness while still being a good host, you want to serve everyone
+a meal while minimizing the difference in happiness between the most and least satisfied students.
+What is the minimum possible difference?
+
+
+\section*{Input}
+
+The first line has two integers $N$ and $K$ ($2 \le K \le N \le 75$), the number of students and the
+number of kinds of porridge. The second line contains the $K$ integers $a_i$ ($1\le a_i\le N$, $\sum a_i = N$), the
+available number of meals of porridge kind $i$. Finally, there are $N$ lines each containing the $K$
+integers $h_{ij}$ ($1\le h_{ij}\le 10^9$), the happiness derived by person $i$ from porridge kind
+$j$.
+
+\section*{Output}
+
+Output the minimum possible difference in happiness between the most and least satisfied students.
+
+\section*{Scoring}
+
+Your solution will be tested on a set of test groups, each worth a number of points. To get the
+points for a test group you need to solve all test cases in the test group. Your final score will be
+the maximum score of a single submission.
+
+\noindent
+\begin{tabular}{| l | l | l |}
+  \hline
+  Group & Points & Constraints \\ \hline
+  $1$   & $50$       & $K = 2$ \\ \hline
+  $2$   & $50$       & No further constraints \\ \hline
+\end{tabular}

@@ -1,0 +1,23 @@
+\problemname{Negative Graph}
+
+It's exam week. Once again, Victor spent so much time studying for exams he fell asleep without
+setting an alarm. As he hurriedly brushed his teeth and threw things into his bag, he checked when
+the next bus leaves. To his surprise, the app showed some trips where some legs of the journey took
+a negative amount of time. With the power of time travel he might make it in time! This must be the
+first time Västtrafik has actually been helpful, he thought. Can you help Victor find the shortest
+amount of time it takes to go to school?
+
+\section*{Input}
+
+The input begins with one line containing the number of stations $N$, the number of routes $M$, the
+number of negative-time routes $K$, Victor's home station $A$ and Chalmers' station $B$ ($2\le
+N,M\le 10^5$, $0\le K\le 50$, $0\le A,B< N$) separated by spaces. Then there follows $M$ lines
+containing $a_i$, $b_i$, $c_i$ ($0\le a_i,b_i<N$, $-10^9\le c_i\le 10^9$) separated by spaces,
+denoting a bus route from station $a_i$ to station $b_i$ that takes $c_i$ minutes. There are
+exactly $K$ negative $c_i$. Self-loops and multiple edges are possible. It's also possible that $A=B$.
+
+\section*{Output}
+
+Output a single integer $C$, the shortest possible time (in minutes) it takes to go from station $A$
+to $B$. Ignore time spent waiting for connections at stations. If the trip can be made arbitrarily
+short, output \texttt{NEGATIVE INFINITY}. If he can't get to school at all, output \texttt{POSITIVE INFINITY}.

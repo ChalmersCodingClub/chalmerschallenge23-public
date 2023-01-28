@@ -1,0 +1,34 @@
+\problemname{Gasqutvå}
+
+Gasquen is antiquated so Gasqutvå shall now be crowdfunded by the Chalmers students.
+The $N$ students communicate along a tree where the students are nodes. Students are arbitrarily numbered from $1$ to $N$.
+The $i$th student's generosity is described by one integer $a_i$.
+You are to choose the first student to donate to the campaign, who will begin by donating $100$ kr and then tell their neighbours in the tree about the campaign.
+When a student $i$ tells a neighbour $j$ about the campaign, and student $j$ hasn't already donated, they will donate $d_j=d_i+a_j$ kr where $d_i$ is the amount $i$ donated.
+Student $j$ will then go on to tell their neighbours in the tree about the campaign.
+Which student should donate first to maximize the total amount raised?
+
+\section*{Input}
+
+The first line of input contains one integer $2 \leq N$, the number of students in the tree.
+Each of the following $N$ lines contains one integer $0 \leq a_i \leq 10^9$ describing how generous the $i$th student is.
+After that, each of the following $N-1$ lines contains two integers $1\leq i, j \leq N$ denoting that students $i$ and $j$ are neighbours in the tree.
+It is guaranteed that the connections form a tree.
+
+\section*{Output}
+
+Print the number of the student that should donate first to maximize the total amount raised. If there are multiple suitable students, choose the one with the lowest number.
+
+\section*{Scoring}
+
+Your solution will be tested on a set of test groups, each worth a number of points. To get the
+points for a test group you need to solve all test cases in the test group. Your final score will be
+the maximum score of a single submission.
+
+\noindent
+\begin{tabular}{| l | l | l |}
+\hline
+Group & Points     & Constraints \\ \hline
+$1$   & $60$       & $N \leq 100$ \\ \hline
+$2$   & $40$       & $N \leq 10^5$ \\ \hline
+\end{tabular}
