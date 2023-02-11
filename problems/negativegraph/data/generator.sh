@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-USE_SCORING=0
 . ../../../testdata_tools/gen.sh
 
 use_solution loke_reduced_bellman_ford.py
@@ -7,8 +6,11 @@ use_solution loke_reduced_bellman_ford.py
 compile gen.py
 compile chain.py
 
+samplegroup
 sample 1
 
+group full 100
+tc 1
 tc_manual ../manual_tests/m1.in
 tc_manual ../manual_tests/m2.in
 tc_manual ../manual_tests/m3.in
