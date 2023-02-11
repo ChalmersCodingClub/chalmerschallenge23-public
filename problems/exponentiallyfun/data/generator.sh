@@ -1,13 +1,15 @@
 #!/usr/bin/env bash
-USE_SCORING=0
 . ../../../testdata_tools/gen.sh
 
 use_solution loke.py
 
 compile gen.py
 
+samplegroup
 sample 1
 
+group full 100
+tc 1
 tc_manual ../manual_tests/m1.in
 tc t01 gen
 tc t02 gen

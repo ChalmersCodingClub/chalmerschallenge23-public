@@ -1,13 +1,17 @@
 #!/usr/bin/env bash
-USE_SCORING=0
 . ../../../testdata_tools/gen.sh
 
 use_solution gustav.cpp
 
 compile gen.py
 
+samplegroup
 sample 1
 sample 2
+
+group full 100
+tc 1
+tc 2
 
 tc t01 gen N=10 maxtk=0
 tc t02 gen N=10 maxtk=1
